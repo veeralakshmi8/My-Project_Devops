@@ -22,8 +22,10 @@
 ```
 sudo yum install java-1.8.0-openjdk
 ```
-- cd /opt
+- Install maven--any software best practice to install in /opt
 ```
+cd /opt
+
 wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz
 ```
 - untar the file
