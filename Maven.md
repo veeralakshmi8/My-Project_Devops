@@ -31,3 +31,6 @@ Rename the tar file
 mv apache-maven-3.8.6 maven
 
 cd maven--cd conf---vi setting.xml---where all details available here we have to give the details of nexus or any artifactory details for storing the artifact
+
+## we have to set up environment varible to work maven commands 
+
