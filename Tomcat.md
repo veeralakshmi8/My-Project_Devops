@@ -12,6 +12,10 @@ cd /opt
 ```
 
 > install java
+```
+sudo yum install java-1.8.0-openjdk
+```
+
 
 > install tomcat
 
@@ -30,6 +34,9 @@ mv apache-tomcat-7.0.106 tomcat
 ```
 cd tomcat
 cd bin
+```
+sh startup.sh
+```
 
 - startup.sh-- to start the service
 - shutdown.sh--to stop the service
@@ -57,3 +64,12 @@ vi tomcat-users.xml
 
 ```
 
+```
+cd webapps
+```
+- webapps contains default applications
+- if we want to deploy new application we have to deploy here
+```
+cd log
+```
+- catalina.out-- see the logs 
