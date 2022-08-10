@@ -32,8 +32,7 @@ mv apache-tomcat-7.0.106 tomcat
 ```
 - Go to tomcat
 ```
-cd tomcat
-cd bin
+cd tomcat/bin
 ```
 sh startup.sh
 ```
@@ -45,7 +44,7 @@ sh startup.sh
 ```
 
 ```
-cd conf
+cd tomcat/conf
 - vi server.xml--tomcat default port number will be there we can change.--- if two tomcat servers are there server ports should be different for both.
 ```
 ```
