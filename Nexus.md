@@ -75,5 +75,5 @@ cd /nexus/bin
       <username>admin</username>
       <password>admin</password>
     </server>
-    ```
+ ```
 
