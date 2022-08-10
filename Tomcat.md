@@ -41,10 +41,10 @@ cd bin
 cd conf
 - vi server.xml--tomcat default port number will be there we can change.--- if two tomcat servers are there server ports should be different for both.
 ```
+```
 vi tomcat-users.xml
 ```
 - tomcat-users.xml- contains credencials
-
 ```
 <role rolename="manager-gui"/>
 <role rolename="manager-script"/>
