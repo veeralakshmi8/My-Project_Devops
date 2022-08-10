@@ -73,3 +73,19 @@ cd webapps
 cd log
 ```
 - catalina.out-- see the logs 
+
+```
+cd /etc/systemd/system
+```
+- to set the service to start or stop the service from any where
+```
+vi tomcat.service
+```
+```
+- change permissions 
+
+```
+systemctl enable tomcat.service
+systemctl start tomcat.service
+systemctl status tomcat.service
+```
