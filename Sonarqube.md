@@ -76,5 +76,39 @@ http://192.168.2.174:9000
 ```
 mvn sonar:sonar
 ```
+```
+cd /etc/systemd/system
+```
+```
+vi sonar.service
+```
+```
+[Unit]
+Description=SonarQube Service
+After=syslog.target network.target
 
+[Service]
+Type=forking
 
+ExecStart=/opt/sonar/bin/linux-x86-64/sonar.sh start
+ExecStop=/opt/sonar/bin/linux-x86-64/sonar.sh stop
+
+User=root
+Group=root
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+```
+chmod 777 sonar.service
+```
+```
+systemctl enable sonar.service
+```
+```
+systemctl start sonar.service
+```
+```
+systemctl status sonar.service
+```
