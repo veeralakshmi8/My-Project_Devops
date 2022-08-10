@@ -44,6 +44,7 @@ cd conf
 vi tomcat-users.xml
 ```
 - tomcat-users.xml- contains credencials
+
 ```
 <role rolename="manager-gui"/>
 <role rolename="manager-script"/>
@@ -53,5 +54,6 @@ vi tomcat-users.xml
 <role rolename="admin-script"/>
 
 <user username="tomcat" password="tomcat" roles="manager-gui, admin-gui, manager-status,manager-script,manager-jmx,admin-script"/>
+
 ```
 
