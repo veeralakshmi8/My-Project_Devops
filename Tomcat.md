@@ -73,19 +73,40 @@ cd webapps
 cd log
 ```
 - catalina.out-- see the logs 
+- tail -100 catalina.out
 
 ```
 cd /etc/systemd/system
 ```
 - to set the service to start or stop the service from any where
+
 ```
 vi tomcat.service
+```
+```
+[Unit]
+Description=Tomcat Service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+LimitNOFILE=65536
+ExecStart=/opt/tomcat/bin/startup.sh start
+ExecStop=/opt/tomcat/bin/shutdown.sh stop
+
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
 ```
 ```
 - change permissions 
 
 ```
+```
 systemctl enable tomcat.service
+
 systemctl start tomcat.service
+
 systemctl status tomcat.service
 ```
