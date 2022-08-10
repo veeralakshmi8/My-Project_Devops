@@ -39,7 +39,7 @@ sonatype-work has passwords
 useradd nexus
 ```
 ```
-chown nexus:nexus nexus
+chown -R nexus:nexus nexus
 ```
 ```
 cd /nexus/bin
